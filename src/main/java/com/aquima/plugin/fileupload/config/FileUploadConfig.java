@@ -38,16 +38,6 @@ public class FileUploadConfig {
       this.dynamicXsltLoader.registerXslt("UI/xslt/fileupload/button-fileupload.xsl");
     }
 
-    /**
-     * Creates and returns a PluginMetadata object containing metadata about the plugin.
-     *
-     * @return PluginMetadata of current plugin
-     */
-    @Bean
-    public IPluginMetadata pluginFileUpload() {
-      return new PluginMetadata("fileupload");
-    }
-
     @Bean
     public IFileUploadHandler basicFileUploadHandler() {
       return new BasicFileUploadHandler();
